@@ -1,6 +1,7 @@
 package com.bakalinda.petclinic.model;
 
 public class PetType extends BaseEntity {
+
     private String name;
 
     public String getName() {
@@ -10,4 +11,5 @@ public class PetType extends BaseEntity {
     public void setName(String name) {
         this.name = name;
     }
+
 }
