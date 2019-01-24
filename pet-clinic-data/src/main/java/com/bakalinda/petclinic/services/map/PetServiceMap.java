@@ -7,7 +7,7 @@ import com.bakalinda.petclinic.services.PetService;
 
 import java.util.Set;
 
-public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService {
+public class PetServiceMap extends AbstractMapService<Pet, Long> implements CrudService <Pet, Long>{
 
 
     @Override

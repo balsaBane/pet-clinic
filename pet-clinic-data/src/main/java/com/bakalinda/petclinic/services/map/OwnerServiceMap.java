@@ -6,7 +6,7 @@ import com.bakalinda.petclinic.services.OwnerService;
 
 import java.util.Set;
 
-public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
+public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements CrudService<Owner, Long> {
 
 
     @Override
@@ -34,8 +34,5 @@ public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements 
         return super.findById(id);
     }
 
-    @Override
-    public Owner findByLastName(String lastName) {
-        return null;
-    }
+
 }
