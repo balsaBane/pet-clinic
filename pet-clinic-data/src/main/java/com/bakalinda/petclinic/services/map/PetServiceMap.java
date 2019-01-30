@@ -4,9 +4,11 @@ import com.bakalinda.petclinic.model.Owner;
 import com.bakalinda.petclinic.model.Pet;
 import com.bakalinda.petclinic.services.CrudService;
 import com.bakalinda.petclinic.services.PetService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService{
 
 

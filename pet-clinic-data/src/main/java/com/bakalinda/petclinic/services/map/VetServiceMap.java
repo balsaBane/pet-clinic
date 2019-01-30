@@ -3,9 +3,11 @@ package com.bakalinda.petclinic.services.map;
 import com.bakalinda.petclinic.model.Vet;
 import com.bakalinda.petclinic.services.CrudService;
 import com.bakalinda.petclinic.services.VetService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService{
 
 
