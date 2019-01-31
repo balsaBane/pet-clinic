@@ -2,7 +2,6 @@ package com.bakalinda.petclinic.services.map;
 
 import com.bakalinda.petclinic.model.BaseEntity;
 
-import java.lang.reflect.Array;
 import java.util.*;
 
 public abstract class AbstractMapService <T extends BaseEntity, ID extends Long> {
