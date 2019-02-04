@@ -2,7 +2,6 @@ package com.bakalinda.petclinic.controllers;
 
 
 import com.bakalinda.petclinic.services.VetService;
-import com.bakalinda.petclinic.services.map.VetServiceMap;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
