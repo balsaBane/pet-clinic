@@ -4,11 +4,13 @@ import com.bakalinda.petclinic.model.Speciality;
 import com.bakalinda.petclinic.model.Vet;
 import com.bakalinda.petclinic.services.SpecialityService;
 import com.bakalinda.petclinic.services.VetService;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
 @Service
+@Profile({"default", "map"})
 public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService{
 
     public VetServiceMap(SpecialityService specialityService) {
