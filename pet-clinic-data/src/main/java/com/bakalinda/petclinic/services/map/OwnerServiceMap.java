@@ -4,11 +4,13 @@ import com.bakalinda.petclinic.model.Owner;
 import com.bakalinda.petclinic.model.Pet;
 import com.bakalinda.petclinic.services.OwnerService;
 import com.bakalinda.petclinic.services.PetService;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
 @Service
+@Profile("springdatajpa")
 public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService  {
 
     private final PetTypeMapService petTypeMapService;

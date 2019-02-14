@@ -6,13 +6,13 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Entity
+@Table(name = "pets")
 public class Pet extends BaseEntity {
 
     @Column(name = "name")
     private String name;
 
-    @ManyToOne
-    @JoinColumn(name = "type_id")
+
     private PetType petType;
 
     @Column(name = "birthday")
