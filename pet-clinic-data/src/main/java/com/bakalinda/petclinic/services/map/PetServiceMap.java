@@ -1,8 +1,6 @@
 package com.bakalinda.petclinic.services.map;
 
-import com.bakalinda.petclinic.model.Owner;
 import com.bakalinda.petclinic.model.Pet;
-import com.bakalinda.petclinic.services.CrudService;
 import com.bakalinda.petclinic.services.PetService;
 import org.springframework.stereotype.Service;
 
