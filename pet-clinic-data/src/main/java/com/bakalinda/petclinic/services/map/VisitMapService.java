@@ -2,9 +2,11 @@ package com.bakalinda.petclinic.services.map;
 
 import com.bakalinda.petclinic.model.Visit;
 import com.bakalinda.petclinic.services.VisitService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class VisitMapService extends AbstractMapService<Visit, Long> implements VisitService {
 
 
