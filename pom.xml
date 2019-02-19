@@ -35,6 +35,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
 					<mainClass>com.bakalinda.petclinic.PetClinicApplication</mainClass>
+					<classifier>exec</classifier>
 				</configuration>
 			</plugin>
 			<plugin>
