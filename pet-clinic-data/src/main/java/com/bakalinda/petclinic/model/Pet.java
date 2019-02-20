@@ -1,5 +1,6 @@
 package com.bakalinda.petclinic.model;
 
+import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -15,6 +16,19 @@ import java.util.Set;
 @Entity
 @Table(name = "pets")
 public class Pet extends BaseEntity {
+
+
+    @Builder
+    public Pet(Long id, String name, PetType petType, LocalDate birthDate, Set<Visit> visits, Owner owner) {
+        this.id = id;
+        this.name = name;
+        this.petType = petType;
+        this.birthDate = birthDate;
+        this.visits = visits;
+        this.owner = owner;
+    }
+
+
 
     @Column(name = "name")
     private String name;

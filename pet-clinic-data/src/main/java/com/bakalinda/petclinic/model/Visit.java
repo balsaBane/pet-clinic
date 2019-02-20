@@ -1,5 +1,6 @@
 package com.bakalinda.petclinic.model;
 
+import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -13,6 +14,14 @@ import java.time.LocalDate;
 @Entity
 @Table(name = "visits")
 public class Visit extends BaseEntity {
+
+    @Builder
+    public Visit(Long id, LocalDate date, String description, Pet pet) {
+        this.id = id;
+        this.date = date;
+        this.description = description;
+        this.pet = pet;
+    }
 
     @Column(name = "date")
     private LocalDate date;

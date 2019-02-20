@@ -1,5 +1,6 @@
 package com.bakalinda.petclinic.model;
 
+import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -14,6 +15,11 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "specialities")
 public class Speciality extends BaseEntity{
+    @Builder
+    public Speciality(Long id, String description) {
+        this.id = id;
+        this.description = description;
+    }
 
     @Column(name = "description")
     private String description;
